@@ -1,0 +1,30 @@
+[project]
+name = "data-extraction-module"
+version = "0.1.0"
+description = "AI-powered PDF data extraction module using FastAPI, SQLModel, and PostgreSQL"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlmodel",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "pydantic",
+    "python-dotenv",
+    "pdfplumber",
+    "PyMuPDF",
+    "camelot-py[cv]",
+    "pytesseract",
+    "Pillow",
+    "transformers",
+    "sentence-transformers",
+    "faiss-cpu",
+    "ollama",
+    "pydantic-settings",
+    "python-multipart"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

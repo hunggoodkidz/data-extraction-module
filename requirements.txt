@@ -1,0 +1,30 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+sqlalchemy
+psycopg2-binary
+pydantic
+python-dotenv
+pydantic-settings
+python-multipart
+
+# PDF parsing
+pdfplumber
+PyMuPDF
+
+# Tabular extraction (choose one; Camelot needs Java/ghostscript)
+camelot-py[cv]
+# tabula-py  # (alternative if you prefer Java-based)
+
+# OCR (only if you have scanned PDFs)
+pytesseract
+Pillow
+
+# RAG: embeddings + vector index
+transformers
+sentence-transformers
+faiss-cpu
+
+# Local LLM client (pick one)
+ollama           # if you run Ollama desktop/daemon
+# llama-cpp-python  # if you prefer GGUF + llama.cpp in-process
